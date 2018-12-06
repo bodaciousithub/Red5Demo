@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/server_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Server Address"
+        android:text="192.168.0.114"/>
+
+    <EditText
+        android:id="@+id/server_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Server Port"
+        android:text="8554"
+        android:layout_below="@id/server_address"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/stream_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Stream Name"
+        android:text="Red51"
+        android:layout_below="@id/server_port"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/stream_name"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publish"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/subscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="subscribe"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
